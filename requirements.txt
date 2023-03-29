@@ -1,0 +1,27 @@
+--extra-index-url https://download.pytorch.org/whl/cu113
+torch==1.12.1+cu113
+torchvision==0.13.1+cu113
+
+cmake
+numpy
+scikit-image
+ffmpeg
+svgwrite
+svgpathtools
+cssutils
+numba
+torch-tools
+scikit-fmm
+easydict
+visdom
+opencv-python==4.5.4.60  
+
+diffusers==0.8
+transformers
+scipy
+ftfy
+accelerate
+
+freetype-py
+shapely
+kornia==0.6.8
