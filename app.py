@@ -47,8 +47,14 @@ from utils import (
 import warnings
 
 TITLE="""<h1 style="font-size: 42px;" align="center">Word-As-Image for Semantic Typography</h1>"""
-DESCRIPTION="""This is a demo for [Word-As-Image for Semantic Typography](https://wordasimage.github.io/Word-As-Image-Page/). By using Word-as-Image, a visual representation of the meaning of the word is created while maintaining legibility of the text and font style. 
+DESCRIPTION="""A demo for [Word-As-Image for Semantic Typography](https://wordasimage.github.io/Word-As-Image-Page/). By using Word-as-Image, a visual representation of the meaning of the word is created while maintaining legibility of the text and font style. 
 Please select a semantic concept word and a letter you wish to generate, it will take ~5 minutes to perform 500 iterations."""
+
+DESCRIPTION += '\n<p>This demo is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>'
+
+if (SPACE_ID := os.getenv('SPACE_ID')) is not None:
+    DESCRIPTION += f'\n<p>For faster inference without waiting in queue, you may duplicate the space and upgrade to GPU in settings. <a href="https://huggingface.co/spaces/{SPACE_ID}?duplicate=true"><img style="display: inline; margin-top: 0em; margin-bottom: 0em" src="https://bit.ly/3gLdBN6" alt="Duplicate Space" /></a></p>'
+
 
 warnings.filterwarnings("ignore")
 
