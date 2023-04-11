@@ -8,18 +8,18 @@ import random
 import numpy.random as npr
 import sys
 
-path = '/home/xlab_app_center/app/code'
-os.makedirs(path)
-sys.path.append('/home/xlab_app_center/app/code')
+path = '/home/xlab-app-center/app/code'
+os.makedirs('/home/xlab-app-center/app/code')
+sys.path.append('/home/xlab-app-center/app/code')
 
 # set up diffvg
 os.system('git clone https://github.com/BachiLi/diffvg.git')
 os.chdir('diffvg')
 os.system('git submodule update --init --recursive')
 os.system('python setup.py install --user')
-sys.path.append("/home/xlab_app_center/.local/lib/python3.8/site-packages/diffvg-0.0.1-py3.8-linux-x86_64.egg")
+sys.path.append("/home/xlab-app-center/.local/lib/python3.8/site-packages/diffvg-0.0.1-py3.8-linux-x86_64.egg")
 
-os.chdir('/home/xlab_app_center/app')
+os.chdir('/home/xlab-app-center/app')
 
 import torch
 from diffusers import StableDiffusionPipeline
