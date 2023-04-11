@@ -8,7 +8,8 @@ import random
 import numpy.random as npr
 import sys
 
-os.mkdir('/home/xlab_app_center/app/code')
+path = '/home/xlab_app_center/app/code'
+os.makedirs(path)
 sys.path.append('/home/xlab_app_center/app/code')
 
 # set up diffvg
